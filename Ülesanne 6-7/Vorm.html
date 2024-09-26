@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Küsimustik</title>
+</head>
+<body>
+    <h1>Küsimustik</h1>
+    <form action="mailto:address@example.com" method="post">
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="ees.perenimi@khk.ee" required>
+        
+        <label for="feedback">Tagasiside:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Kirjuta oma tagasiside..."></textarea>
+        
+        <label for="gender">Sugu:</label>
+        <select id="gender" name="gender">
+            <option value="male">Mees</option>
+            <option value="female">Naine</option>
+            <option value="other">Muu</option>
+        </select>
+        
+        <label>Teie lemmikloom:</label><br>
+        <input type="checkbox" id="cat" name="animal" value="cat"> Kass<br>
+        <input type="checkbox" id="dog" name="animal" value="dog"> Koer<br>
+        
+        <input type="submit" value="Saada vorm!">
+        <input type="reset" value="Tühjenda">
+    </form>
+</body>
+</html>

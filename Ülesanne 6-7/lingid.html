@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingid ja Pildid</title>
+</head>
+<body>
+    <h1>HTML Lingid ja Pildid</h1>
+    
+    <h2>Siseviidatud lingid</h2>
+    <h3 id="algus">Sisu algus</h3>
+    <p>Siin algab meie tekst. <a href="#algus">Mine algusesse</a></p>
+
+    <h2>Välisviidatud lingid</h2>
+    <p><a href="https://www.google.com" target="_blank">Google</a></p>
+    <p><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></p>
+
+    <h2>Pildid</h2>
+    <a href="https://www.example.com">
+        <img src="https://via.placeholder.com/150" alt="Näidis pilt" width="150" height="200">
+    </a>
+    
+    <footer>
+        <hr>
+        <p>&copy; <span id="year"></span> Teie Nimi</p>
+    </footer>
+
+    <script>
+        // Uuendab automaatselt praeguse aasta
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
